@@ -1,25 +1,27 @@
 <?php
 
-
-
 session_start();
-$_SESSION['id'];
-$_SESSION['email'];
+$userId = $_SESSION['id'];
+$userEmail = $_SESSION['email'];
 
 require_once 'database.php';
 
 if (isset($_POST['login'])) {
-    $userId = $_SESSION['id'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    
+    $password = $_POST['password'];
+
+    $salt = uniqid(mt_rand(), true);
+$saltedPassword = $password . $salt;
+$hashedPassword = password_hash($saltedPassword, PASSWORD_DEFAULT);
 
 
-        $updateQuery = $db->prepare("UPDATE gebruikers SET wachtwoord = :password WHERE id = :userId");
-        $updateQuery->bindParam(':password', $password);
-        $updateQuery->bindParam(':userId', $userId);
-        $updateQuery->execute();
-
+    $updateQuery = $db->prepare("UPDATE gebruikers SET wachtwoord = :wachtwoord WHERE email = :userEmail");
+    $updateQuery->bindParam(':wachtwoord', $hashedPassword);
+    $updateQuery->bindParam(':userEmail', $userEmail);
+    $updateQuery->execute();
 }
 
 ?>
+
+
+
 

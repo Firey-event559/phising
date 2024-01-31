@@ -20,18 +20,6 @@ $_SESSION['email'];
 <body>
     <?php
 
-if (isset($_POST['login'])) {
-    $userId = $_SESSION['id'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    
-
-
-        $updateQuery = $db->prepare("UPDATE gebruikers SET wachtwoord = :password WHERE id = :userId");
-        $updateQuery->bindParam(':password', $password);
-        $updateQuery->bindParam(':userId', $password);
-        $updateQuery->execute();
-
-}
 
     ?>
     <div>
