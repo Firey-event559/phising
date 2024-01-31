@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+
+div{
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 400px;
+    height:500px;
+    
+    
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+   margin-left:30px ;
+  
+
+}
+
+img{
+    padding-top:20px ;
+   
+}
+
+h1.aanmelden{
+    font-size:24px ;
+    font-family: Arial, sans-serif;
+ margin: 0px;
+    padding: 0px;
+   margin-top:20px ;
+
+}
+p.OneDrive{
+    font-size:13px ;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+
+}
+
+
+input.email{
+    height: 30px;
+    border:none;
+    border-bottom: 1px solid black ;
+    padding: 5px;
+    outline: none;
+    margin-bottom:10px ;
+    margin-top:10px ;
+    width: 300px;
+    
+}
+
+input.password{
+    height: 30px;
+    border:none;
+    border-bottom: 1px solid black ;
+    padding: 5px;
+    outline: none;
+    margin-bottom:10px ;
+    width: 300px;
+}
+
+p.logo-tekst{
+    margin: 0px;
+    padding: 0px;
+}
+
+p.account-aanmaken{
+    font-size:13px ;
+}
+
+a.account_aanmaken{
+    color:#0067B8;
+}
+a.account_aanmaken:hover{
+    color:#0067B8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+p.geen-toegang{
+    font-size: 13px;
+    color:#0067B8;
+}
+p.geen-toegang:hover{
+    color:#0067B8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input.login{
+    background-color:#0067B8;
+    color: white;
+    border: none;
+  width:108px ;
+  height: 32px;
+  margin-top: 5px;
+    font-size:15px ;
+    margin-left:205px ;
+    
+}
+input.login:hover{
+  cursor: pointer;
+    background-color:#005DA5 ;
+}
+h1.aanmelden2{
+    margin-top: 20px;
+    font-size: 15px;
+    font-family: "Segoe UI Webfont","Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";;
+}
