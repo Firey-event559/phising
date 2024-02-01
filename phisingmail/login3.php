@@ -20,6 +20,8 @@ $hashedPassword = password_hash($saltedPassword, PASSWORD_DEFAULT);
     $updateQuery->execute();
 }
 
+
+echo "Je bent gehackt!"
 ?>
 
 
